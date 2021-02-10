@@ -9,8 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  document.getElementById('run').addEventListener('click', function () {
+    var r = Math.floor(Math.random() * 257);
+    var g = Math.floor(Math.random() * 257);
+    var b = Math.floor(Math.random() * 257);
 
-    // your code here
-
+    document.body.style.backgroundColor =
+      'rgb(' + r + ', ' + g + ', ' + b + ') ';
+  });
 })();

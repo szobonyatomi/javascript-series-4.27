@@ -10,17 +10,19 @@
 // You will have time to focus on it later.
 
 (() => {
-    const people = new Set([
-        "Nicolas",
-        "Nick",
-        "Leny",
-        "Alexandre",
-        "Charlène",
-        "Laureline",
-        "Esther",
-        "Simon",
-        "Lucas",
-    ]);
-
-    // your code here
+  const people = new Set([
+    'Nicolas',
+    'Nick',
+    'Leny',
+    'Alexandre',
+    'Charlène',
+    'Laureline',
+    'Esther',
+    'Simon',
+    'Lucas',
+  ]);
+  document.getElementById('run').addEventListener('click', () => {
+    console.log(people.size);
+    console.log(people.has('Alexandre'));
+  });
 })();

@@ -9,8 +9,20 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+while (answer !== 'y') {
+  var age = prompt('Please add your age!');
+  var sex = prompt('Please, add choose your sex!');
+  var town = prompt('Please add your town!');
 
-    // your code here
+  (function () {
+    if (age !== '' && sex !== '' && town !== '') {
+      alert(
+        'Your age is : ' + age + '\nYour sex: ' + sex + '\nYou are in :' + town
+      );
+    } else {
+      alert('Try again!');
+    }
+  })();
 
-})();
+  var answer = prompt('These details were correct? (y/n)');
+}

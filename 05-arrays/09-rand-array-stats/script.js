@@ -9,8 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+var numbers = new Array();
 
-    // your code here
+(function () {
+  document.getElementById('run').addEventListener('click', () => {
+    var sum = 0;
 
+    for (var i = 1; i <= 10; i++) {
+      var x = Math.floor(Math.random() * 101);
+      document.getElementById('n-' + i).innerHTML = x;
+      numbers.push(x);
+      sum = sum + x;
+    }
+
+    document.getElementById('min').innerHTML = Math.min(...numbers);
+    document.getElementById('max').innerHTML = Math.max(...numbers);
+    document.getElementById('sum').innerHTML = sum;
+    document.getElementById('average').innerHTML = sum / 10;
+  });
 })();

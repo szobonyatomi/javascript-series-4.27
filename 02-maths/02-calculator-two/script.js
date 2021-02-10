@@ -10,16 +10,29 @@
 // You will have time to focus on it later.
 
 (() => {
-    // to get the value of an input: document.getElementById("element-id").value
+  // to get the value of an input: document.getElementById("element-id").value
 
-    const performOperation = operation => {
-        // perform the operation
-    };
+  const performOperation = (operation) => {
+    var x = parseInt(document.getElementById('op-one').value);
+    var y = parseInt(document.getElementById('op-two').value);
+    // perform the operation
+    switch (operation) {
+      case 'addition':
+        alert(x + y);
+        break;
+      case 'substraction':
+        alert(x - y);
+        break;
+      case 'multiplication':
+        alert(x * y);
+        break;
+      case 'division':
+        alert(x / y);
+        break;
+    }
+  };
 
-    Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
-        $btn.addEventListener(
-            "click",
-            () => (performOperation($btn.id), false),
-        ),
-    );
+  Array.from(document.querySelectorAll('button.operator')).forEach(($btn) =>
+    $btn.addEventListener('click', () => (performOperation($btn.id), false))
+  );
 })();

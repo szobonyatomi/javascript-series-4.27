@@ -9,10 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  var d = new Date();
+  var h = d.getHours();
+  var m = d.getMinutes();
+  var tm = h * 60 + m;
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
-    // your code here
-
+  if (tm >= 1050) {
+    document.getElementById('target').innerHTML = 'Good evening!';
+  }
 })();

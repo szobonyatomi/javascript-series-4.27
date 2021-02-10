@@ -10,5 +10,12 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  const user = {
+    firstname: 'Szobonya',
+    lastname: 'Tomi',
+    age: '43',
+    city: 'Hermalle-sous-Argenteu',
+    country: 'Belgium',
+  };
+  console.log(user);
 })();

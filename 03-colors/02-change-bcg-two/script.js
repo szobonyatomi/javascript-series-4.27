@@ -9,8 +9,28 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  var colors = [
+    'black',
+    '#d65076',
+    '#dd4124',
+    '#009b77',
+    '#b565a7',
+    '#955251',
+    '#92a8d1',
+    '#92b558',
+    '#604c8d',
+    '#ff6f61',
+    '#0f4c81',
+    'white',
+  ];
 
-    // your code here
-
+  document.getElementById('run').addEventListener('click', function () {
+    var x = document.getElementById('color').value;
+    if (colors.length - 1 >= x) {
+      document.body.style.backgroundColor = colors[x];
+    } else {
+      alert('Add number smaller than ' + colors.length);
+    }
+  });
 })();

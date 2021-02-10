@@ -8,10 +8,8 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
-(function() {
-    // your code here
-
-    alert("coucou les jepsen");
-
+var my_message = 'Hello, World!';
+(function () {
+  alert(my_message);
+  // your code here
 })();

@@ -9,23 +9,23 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
+(function () {
+  document.getElementById('run').addEventListener('click', function () {
     var fruits = [
-        "apple",
-        "pear",
-        "raspberry",
-        "tomatos",
-        "kiwi",
-        "banana",
-        "orange",
-        "mandarin",
-        "durian",
-        "peache",
-        "grap",
-        "cherry",
+      'apple',
+      'pear',
+      'raspberry',
+      'tomatos',
+      'kiwi',
+      'banana',
+      'orange',
+      'mandarin',
+      'durian',
+      'peache',
+      'grap',
+      'cherry',
     ];
 
-    // your code here
-
+    alert(fruits[3]);
+  });
 })();

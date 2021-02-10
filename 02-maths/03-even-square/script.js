@@ -9,12 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  document.getElementById('run').addEventListener('click', function () {
+    // your code here
+    var i;
 
-    document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
-
-    });
-
+    for (i = 1; i <= 21; i++) {
+      alert(i + ' square = ' + Math.pow(i, 2));
+    }
+  });
 })();

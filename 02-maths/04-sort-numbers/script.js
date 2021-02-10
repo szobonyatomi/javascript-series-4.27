@@ -9,14 +9,35 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  // to get the value of an input: document.getElementById("element-id").value
 
-    // to get the value of an input: document.getElementById("element-id").value
+  document.getElementById('run').addEventListener('click', function () {
+    // your code here
 
-    document.getElementById("run").addEventListener("click", function() {
+    var x = document.getElementById('numbers').value;
+    var numbers = x.split(',');
+    /*
+ for (var i=0;i<x;i++) {
+            x[i]=parseInt(x[i]);
+        }
 
-        // your code here
+        for (var x = 0; x < x - 1; x++) {
+            for (var i = 0; i < x - 1; i++) {
+                if (x[i] > x[i + 1]) {
+                    var temp = x[i + 1];
+                    x[i + 1] = x[i];
+                    x[i] = temp;
+                }
+            }
+        }
 
-    });
+ */
 
+    alert(
+      numbers.sort(function (a, b) {
+        return a - b;
+      })
+    );
+  });
 })();

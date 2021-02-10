@@ -10,18 +10,25 @@
 // You will have time to focus on it later.
 
 (() => {
-    const fruits = new Set([
-        "apple",
-        "pear",
-        "strawberry",
-        "tomato",
-        "orange",
-        "mandarin",
-        "durian",
-        "peach",
-        "grape",
-        "cherry",
-    ]);
+  const fruits = new Set([
+    'apple',
+    'pear',
+    'strawberry',
+    'tomato',
+    'orange',
+    'mandarin',
+    'durian',
+    'peach',
+    'grape',
+    'cherry',
+  ]);
 
-    // your code here
+  document.getElementById('run').addEventListener('click', () => {
+    fruits.delete('apple');
+    fruits.delete('cherry');
+    fruits.add('banana');
+    fruits.add('kiwi');
+
+    console.log(fruits);
+  });
 })();

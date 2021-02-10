@@ -9,8 +9,8 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+var your_name = prompt('Type your name, please!');
 
-    // your code here
-
+(function () {
+  alert('Hello ' + your_name + '!' + ' How are you?');
 })();

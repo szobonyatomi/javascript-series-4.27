@@ -8,9 +8,11 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
-(function() {
-
-  // your code here
-
+var more_cafe = prompt('Do you want some cakes? (yes/no)').toLowerCase();
+(function () {
+  if (more_cafe == 'yes') {
+    alert('Congrat, you are a cake fun;)!');
+  } else {
+    alert('More cake for me :p!');
+  }
 })();

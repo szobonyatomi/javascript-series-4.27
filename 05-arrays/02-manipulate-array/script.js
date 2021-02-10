@@ -9,21 +9,26 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
+(function () {
+  document.getElementById('run').addEventListener('click', function () {
     var fruits = [
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "orange",
-        "mandarine",
-        "durian",
-        "pêche",
-        "raisin",
-        "cerise",
+      'pomme',
+      'poire',
+      'fraise',
+      'tomate',
+      'orange',
+      'mandarine',
+      'durian',
+      'pêche',
+      'raisin',
+      'cerise',
     ];
 
-    // your code here
+    fruits.pop();
+    fruits.shift();
+    fruits.push('kiwi');
+    fruits.unshift('banana');
 
+    alert(fruits.join(' , '));
+  });
 })();
