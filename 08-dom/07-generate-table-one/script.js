@@ -9,8 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  var t = document.createElement('TABLE');
+  t.setAttribute('id', 'newTable');
+  document.getElementById('target').appendChild(t);
 
-    // your code here
-
+  for (var i = 0; i < 10; i++) {
+    var r = document.createElement('TR');
+    document.getElementById('newTable').appendChild(r);
+  }
 })();

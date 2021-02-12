@@ -9,8 +9,16 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  document.getElementById('pass-one').addEventListener('input', counter);
 
-    // your code here
+  function counter() {
+    var x = document.getElementById('pass-one').value;
+    var digit = /\d/g;
+    var nbr = x.match(digit);
 
+    if (x.length >= 8 && nbr.length >= 2) {
+      document.querySelector('.indicator').innerHTML = 'OK';
+    }
+  }
 })();

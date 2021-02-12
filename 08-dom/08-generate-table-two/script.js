@@ -9,8 +9,21 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  var t = document.createElement('table');
+  t.setAttribute('id', 'newTable');
+  document.getElementById('target').appendChild(t);
+  var x = 0;
+  for (i = 0; i < 10; i++) {
+    var r = document.createElement('tr');
 
-    // your code here
-
+    for (n = 1; n <= 10; n++) {
+      var c = document.createElement('td');
+      x = x + 1;
+      z = document.createTextNode(x);
+      c.appendChild(z);
+      r.appendChild(c);
+    }
+    document.querySelector('table').appendChild(r);
+  }
 })();

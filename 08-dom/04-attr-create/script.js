@@ -9,8 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  var picLink = document.querySelector('#source').getAttribute('data-image');
+  var newImg = document.createElement('img');
+  newImg.setAttribute('src', picLink);
 
-    // your code here
-
+  document.querySelector('#target').appendChild(newImg);
+  document.querySelector('#source').parentNode.removeChild('#source');
 })();
+
+//delete no works !!!!
