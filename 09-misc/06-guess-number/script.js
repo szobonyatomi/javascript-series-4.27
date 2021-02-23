@@ -16,9 +16,9 @@
 
   while (x != y) {
     if (x > y) {
-      y = prompt('My number is bigger likes yours. Try again!');
+      y = prompt('My number is higher likes yours. Try again!');
     } else {
-      y = prompt('My number is smaller likes yours. Try again!');
+      y = prompt('My number is lower likes yours. Try again!');
     }
   }
 

@@ -10,8 +10,8 @@
 // You will have time to focus on it later.
 
 (function () {
-  document.querySelector('#target').innerHTML = '';
-  var text = 'TypeWriter effect with JavaScript!';
+  var text = document.querySelector('#target').textContent;
+  //var text = 'TypeWriter effect with JavaScript!';
 
   var i = 0;
 

@@ -14,12 +14,12 @@
   t.setAttribute('id', 'newTable');
   document.getElementById('target').appendChild(t);
   var x = 0;
-  for (i = 0; i < 10; i++) {
+  for (i = 1; i <= 10; i++) {
     var r = document.createElement('tr');
 
     for (n = 1; n <= 10; n++) {
       var c = document.createElement('td');
-      x = x + 1;
+      x = n * i;
       z = document.createTextNode(x);
       c.appendChild(z);
       r.appendChild(c);

@@ -16,7 +16,7 @@
   output.innerHTML = slider.value;
 
   slider.oninput = function () {
-    output.innerHTML = this.value;
+    output.innerHTML = '0' + this.value;
   };
   slider.addEventListener('mousemove', function () {});
 })();

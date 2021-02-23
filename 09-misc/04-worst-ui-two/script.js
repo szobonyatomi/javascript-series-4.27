@@ -12,6 +12,7 @@
 (function () {
   var x = document.getElementById('target').innerHTML;
   var n = parseInt(x);
+  //let min = document.getElementById('target').getAttribute('data-min');
 
   document.getElementById('part-four').addEventListener('click', function () {
     increase('part-four');

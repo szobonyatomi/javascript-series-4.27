@@ -20,7 +20,7 @@
     } else {
       var inp = document.querySelectorAll('input');
       for (var i = 0; i < inp.length; i++) {
-        inp[i].style.borderColor = 'red';
+        //inp[i].style.borderColor = 'red';
         inp[i].setAttribute('class', 'error');
       }
     }
