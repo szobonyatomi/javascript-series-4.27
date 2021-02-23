@@ -9,8 +9,45 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  var x = document.getElementById('target').innerHTML;
+  var n = parseInt(x);
 
-    // your code here
+  document.getElementById('part-four').addEventListener('click', function () {
+    increase('part-four');
+    n = n + 1;
+    print(n);
+  });
 
+  document.getElementById('part-three').addEventListener('click', function () {
+    increase('part-three');
+    n = n + 100;
+    print(n);
+  });
+
+  document.getElementById('part-two').addEventListener('click', function () {
+    increase('part-two');
+    n = n + 10000;
+    print(n);
+  });
+
+  document.getElementById('part-one').addEventListener('click', function () {
+    increase('part-one');
+    n = n + 1000000;
+    print(n);
+  });
+
+  function increase(item) {
+    var nbr = parseInt(document.getElementById(item).innerHTML);
+    newNbr = nbr + 1;
+    if (newNbr < 10) {
+      document.getElementById(item).textContent = '0' + newNbr;
+    } else {
+      document.getElementById(item).textContent = newNbr;
+    }
+  }
+
+  function print(item) {
+    document.getElementById('target').innerHTML = '+' + item;
+  }
 })();

@@ -9,8 +9,14 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  var slider = document.getElementById('slider');
+  var output = document.getElementById('target');
 
-    // your code here
+  output.innerHTML = slider.value;
 
+  slider.oninput = function () {
+    output.innerHTML = this.value;
+  };
+  slider.addEventListener('mousemove', function () {});
 })();

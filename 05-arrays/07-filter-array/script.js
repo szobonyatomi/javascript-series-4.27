@@ -88,11 +88,12 @@
         age: 81,
       },
     ];
+    document.getElementById('run').addEventListener('click', function () {
+      var adult = people.filter((person) => person.age > 18);
 
-    var adult = people.filter((person) => person.age > 18);
-
-    adult.forEach(function (adultName) {
-      console.log(adultName.firstname + ' ' + adultName.lastname);
+      adult.forEach(function (adultName) {
+        console.log(adultName.firstname + ' ' + adultName.lastname);
+      });
     });
   });
 })();

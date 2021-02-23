@@ -26,7 +26,7 @@
     document.getElementById('target').innerHTML = 'Hello!';
   }
 
-  console.log(h);
+  console.log(d);
 
   // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 

@@ -9,8 +9,20 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  var x = Math.floor(Math.random() * 100);
+  console.log(x);
+  var y = prompt('Which number i Thought');
 
-    // your code here
+  while (x != y) {
+    if (x > y) {
+      y = prompt('My number is bigger likes yours. Try again!');
+    } else {
+      y = prompt('My number is smaller likes yours. Try again!');
+    }
+  }
 
+  if ((x = y)) {
+    alert('You win!');
+  }
 })();

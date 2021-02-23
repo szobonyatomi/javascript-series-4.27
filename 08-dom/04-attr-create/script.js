@@ -15,7 +15,5 @@
   newImg.setAttribute('src', picLink);
 
   document.querySelector('#target').appendChild(newImg);
-  document.querySelector('#source').parentNode.removeChild('#source');
+  document.querySelector('#source').remove();
 })();
-
-//delete no works !!!!
